@@ -1,0 +1,31 @@
+generated: '2026-07-18'
+method: searched
+source: https://open.poizon.com/doc/list/documentationDetail/9
+docs:
+- https://open.poizon.com/doc/list/documentationDetail/9
+- https://open.poizon.com/doc/list/documentationDetail/15
+notes: >-
+  Captured from the POIZON / Dewu Open Platform (open.poizon.com, open.dewu.com)
+  developer documentation. The portal is a JS-rendered SPA and geo-restricted, so
+  a full securityScheme could not be harvested; the model below reflects what the
+  published docs navigation and authentication pages describe. No OpenAPI is
+  published, so this is not derived from a spec.
+summary:
+  types:
+  - apiKey
+  - signature
+  model: app-key + request signature (HMAC sign) — common Chinese open-platform pattern
+schemes:
+- name: AppKeySignature
+  type: apiKey
+  description: >-
+    Requests are identified by an application app_key and signed with a computed
+    request signature (the docs reference a "Sign" method and a hosted "Sign Tool").
+    Sellers and ISV/ERP integrators are authorized to obtain credentials through the
+    Open Platform before calling the API.
+  parameters:
+  - app_key
+  - sign
+  authorization_models:
+  - Seller authentication (open.poizon.com/doc/list/documentationDetail/9)
+  - ISV / ERP authorization
