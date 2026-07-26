@@ -1,8 +1,27 @@
 aid: dewu-poizon
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/dewu-poizon.png
 name: Dewu (POIZON)
-description: 'Dewu (POIZON) is a company surfaced as a portfolio company of hongshan and added to the
-  API Evangelist network as a stub for enrichment. Sector: technology. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Dewu (POIZON) is a leading Chinese online marketplace for sneakers, streetwear, luxury goods, and
+  collectibles, distinguished by its integrated product authentication (legit-check) service that
+  verifies items before they ship to buyers. Operated by Shanghai-based Poizon and backed by Hongshan
+  (formerly Sequoia China), it runs both the domestic Dewu (得物) app and the global POIZON marketplace.
+  For developers it operates the POIZON / Dewu Open Platform (open.poizon.com and open.dewu.com), a
+  partner program that lets sellers, ISVs, and ERP integrators connect to the marketplace over an
+  app-key plus request-signature authenticated API covering product data, pricing, catalog search,
+  delivery modes, and vendor information.
 url: https://raw.githubusercontent.com/api-evangelist/dewu-poizon/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +31,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Technology
+- E-Commerce
+- Marketplace
+- Retail
+- Sneakers
+- Luxury Goods
+- Authentication
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +49,25 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/dewu-poizon-domain-security.yml
+- type: Authentication
+  url: authentication/dewu-poizon-authentication.yml
+- type: LLMsTxt
+  url: llms/dewu-poizon-llms.txt
+- type: DeveloperPortal
+  url: https://open.poizon.com/
+- type: Documentation
+  url: https://open.poizon.com/doc/list/documentationDetail/15
+- type: APIReference
+  url: https://open.poizon.com/doc/list/apiDetail/166?openKey=1
 - type: Website
   url: https://dewu.com
+- type: Website
+  name: POIZON (global)
+  url: https://www.poizon.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

@@ -1,0 +1,20 @@
+# Dewu (POIZON)
+
+> Dewu (POIZON) is a leading Chinese online marketplace for sneakers, streetwear, luxury goods, and collectibles, known for its integrated authentication (legit-check) service. It operates the POIZON Open Platform, a developer program that lets sellers, ISVs, and ERP partners integrate with the marketplace over an app-key + signature authenticated API.
+
+## Developer
+
+- [POIZON Open Platform (English)](https://open.poizon.com/): developer portal, API documentation, and sign tooling
+- [Dewu Open Platform (得物开放平台, Chinese)](https://open.dewu.com/): domestic developer portal
+- [API Introduction](https://open.poizon.com/doc/list/documentationDetail/15): overview of the Open Platform API
+- [Seller Authentication](https://open.poizon.com/doc/list/documentationDetail/9): how sellers authenticate and authorize integrations
+
+## Company
+
+- [POIZON (global)](https://www.poizon.com/): global marketplace and legit-check app
+- [Dewu (得物, China)](https://www.dewu.com/): domestic marketplace
+
+## Artifacts
+
+- Authentication profile: authentication/dewu-poizon-authentication.yml
+- Domain security probe: security/dewu-poizon-domain-security.yml
